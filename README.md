@@ -14,5 +14,5 @@ repository we'll be able to see the code you're writing, answer questions, and e
 Other students in the workshop will also be able to see the code you're writing if they browse to your fork.
 
 If you have any questions at all, access the private Campfire chat, email learn@thoughtbot.com, or 
-attend the weekly office hours. However, don't want until the office hours if you get stuck or 
+attend the weekly office hours. However, don't wait until the office hours if you get stuck or 
 have questions, we're here to help you!
