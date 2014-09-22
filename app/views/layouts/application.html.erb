@@ -18,6 +18,10 @@
     <% end %>
   </nav>
 
+  <% if alert %>
+    <div><%= alert %></div>
+  <% end %>
+
   <%= yield %>
 
 </body>
