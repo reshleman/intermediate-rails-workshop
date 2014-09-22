@@ -1,5 +1,5 @@
 <%= div_for shout do %>
-  <%= shout.user.username %>:
+  <%= link_to shout.user.username, shout.user %>:
   <%= shout.body %>
-  (<%= time_ago_in_words shout.created_at %> ago.)
+  (<%= link_to "#{time_ago_in_words(shout.created_at)} ago", shout %>)
 <% end %>
