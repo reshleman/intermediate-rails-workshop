@@ -8,17 +8,17 @@
 </head>
 <body>
 
-<nav>
-  <% if signed_in? %>
-    <%= current_user.username %>
-    <%= link_to "Sign Out", session_path, method: :delete %>
-  <% else %>
-    <%= link_to "Sign Up", new_user_path %>
-    <%= link_to "Sign In", new_session_path %>
-  <% end %>
-</nav>
+  <nav>
+    <% if signed_in? %>
+      <%= current_user.username %>
+      <%= link_to "Sign Out", session_path, method: :delete %>
+    <% else %>
+      <%= link_to "Sign Up", new_user_path %>
+      <%= link_to "Sign In", new_session_path %>
+    <% end %>
+  </nav>
 
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>
