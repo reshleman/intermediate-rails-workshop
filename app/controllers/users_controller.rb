@@ -21,6 +21,10 @@ class UsersController < ApplicationController
     @shouts = @user.shouts
   end
 
+  def index
+    @users = User.all
+  end
+
   private
 
   def user_params
