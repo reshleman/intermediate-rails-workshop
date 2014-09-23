@@ -5,6 +5,11 @@
   <%= form.submit "Shout!" %>
 <% end %>
 
+<%= form_for @photo_shout do |form| %>
+  <%= form.file_field :image %>
+  <%= form.submit "Shout!" %>
+<% end %>
+
 <div class="shouts">
   <%= render @shouts %>
 </div>

@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     root "homes#show"
   end
 
+  resources :photo_shouts, only: [:create]
   resource :session, only: [:new, :create, :destroy]
   resources :shouts, only: [:show]
   resources :text_shouts, only: [:create]
