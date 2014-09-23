@@ -1,15 +1,15 @@
 <h2>Your Shouter Dashboard</h2>
 
-<%= form_for @text_shout do |form| %>
+<%= form_for @dashboard.new_text_shout do |form| %>
   <%= form.text_field :body, placeholder: "Type a Shout Here" %>
   <%= form.submit "Shout!" %>
 <% end %>
 
-<%= form_for @photo_shout do |form| %>
+<%= form_for @dashboard.new_photo_shout do |form| %>
   <%= form.file_field :image %>
   <%= form.submit "Shout!" %>
 <% end %>
 
 <div class="shouts">
-  <%= render @shouts %>
+  <%= render @dashboard.timeline %>
 </div>
