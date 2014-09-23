@@ -1,4 +1,5 @@
 <%= div_for shout do %>
+  <%= gravatar shout.user %>
   <%= link_to shout.user.username, shout.user %> shouted:
   <div>
     <%= render shout.content %>
