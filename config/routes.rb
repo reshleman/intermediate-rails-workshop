@@ -14,5 +14,7 @@ Rails.application.routes.draw do
   resource :session, only: [:new, :create, :destroy]
   resources :shouts, only: [:show]
   resources :text_shouts, only: [:create]
-  resources :users, only: [:new, :create, :show]
+  resources :users, only: [:new, :create, :show] do
+    post "follow" => "following_relationships#create"
+  end
 end
