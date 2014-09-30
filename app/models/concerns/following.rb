@@ -13,6 +13,10 @@ module Following
     has_many :followers, through: :follower_relationships
   end
 
+  def can_follow?(user)
+    self != user
+  end
+
   def following?(user)
     followed_user_ids.include?(user.id)
   end
