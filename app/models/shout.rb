@@ -4,7 +4,9 @@ class Shout < ActiveRecord::Base
 
   default_scope { order("created_at DESC") }
 
-  def self.text_shouts
-    where(content_type: "TextShout")
+  searchable do
+    text :content do
+      content.index
+    end
   end
 end

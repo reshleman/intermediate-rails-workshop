@@ -6,6 +6,8 @@ gem 'sqlite3'
 gem 'monban', '~> 0.1.1'
 gem 'monban-generators', group: :development
 gem 'paperclip', '~> 4.2.0'
+gem 'sunspot_rails'
+gem 'sunspot_solr'
 
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
