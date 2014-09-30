@@ -18,6 +18,11 @@
     <% end %>
   </nav>
 
+  <%= form_for(:search, url: search_path, method: :get) do |form| %>
+    <%= form.text_field :term %>
+    <%= form.submit "Search" %>
+  <% end %>
+
   <% if alert %>
     <div><%= alert %></div>
   <% end %>

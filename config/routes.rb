@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   resources :hashtags, only: [:show]
   resources :photo_shouts, only: [:create]
+  resource :search, only: [:show]
   resource :session, only: [:new, :create, :destroy]
   resources :shouts, only: [:show]
   resources :text_shouts, only: [:create]

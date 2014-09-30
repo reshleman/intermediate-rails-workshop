@@ -1,4 +1,6 @@
 class Search
+  include ActiveModel::Conversion
+
   attr_reader :term
 
   def initialize(options = {})
